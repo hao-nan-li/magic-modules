@@ -19,3 +19,6 @@ overrides: !ruby/object:Overrides::ResourceOverrides
     import_format: ["projects/{{project}}/locations/{{location}}/endpoints/{{name}}"]
     examples:
       - !ruby/object:Provider::Terraform::Examples
+        name: "cloudids_endpoint"
+        primary_resource_id: "example-endpoint"
+        skip_test: true

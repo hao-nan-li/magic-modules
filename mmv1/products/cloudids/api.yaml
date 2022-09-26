@@ -12,7 +12,7 @@
 # limitations under the License.
 
 --- !ruby/object:Api::Product
-name: Cloud IDS
+name: CloudIds
 display_name: Cloud Intrusion Detection Service
 versions:
   - !ruby/object:Api::Product::Version
@@ -30,10 +30,10 @@ objects:
     base_url: 'projects/{{project}}/locations/{{location}}/endpoints'
     create_url: 'projects/{{project}}/locations/{{location}}/endpoints?endpointId={{name}}'
     self_link: 'projects/{{project}}/locations/{{location}}/endpoints/{{name}}'
-    create_verb: POST
+    create_verb: :POST
     description: |
       Cloud IDS is an intrusion detection service that provides threat detection for intrusions, malware, spyware, and command-and-control attacks on your network.
-    reference: !ruby/object:Api::Resource::ReferenceLinks
+    references: !ruby/object:Api::Resource::ReferenceLinks
       api: 'https://cloud.google.com/intrusion-detection-system/docs/configuring-ids'
     parameters:
       - !ruby/object:Api::Type::String
@@ -64,7 +64,7 @@ objects:
       - !ruby/object:Api::Type::String
         name: 'description'
         description: |
-          	An optional description of the endpoint.
+          An optional description of the endpoint.
       - !ruby/object:Api::Type::String
         name: 'endpoint_forwarding_rule'
         output: true
